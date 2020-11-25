@@ -1,16 +1,16 @@
 @font-face {
   font-family: Plex;
-  src: url(https://raw.githubusercontent.com/tateyeung/grc339/master/assets/IBMPlexSans-Regular.woff2);
+  src: url(/assets/IBMPlexSans-Regular.woff2);
   font-style: normal;
 }
 @font-face {
   font-family: Plex;
-  src: url(https://raw.githubusercontent.com/tateyeung/grc339/master/assets/IBMPlexSans-Italic.woff2);
+  src: url(/assets/IBMPlexSans-Italic.woff2);
   font-style: italic;
 }
 @font-face {
   font-family: Nexa;
-  src: url(https://raw.githubusercontent.com/tateyeung/grc339/master/assets/NexaDemo-Bold.woff);
+  src: url(/assets/NexaDemo-Bold.woff);
 }
 
 
