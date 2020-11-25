@@ -1,0 +1,366 @@
+@font-face {
+  font-family: Plex;
+  src: url(https://raw.githubusercontent.com/tateyeung/grc339/master/assets/IBMPlexSans-Regular.woff2);
+  font-style: normal;
+}
+@font-face {
+  font-family: Plex;
+  src: url(https://raw.githubusercontent.com/tateyeung/grc339/master/assets/IBMPlexSans-Italic.woff2);
+  font-style: italic;
+}
+@font-face {
+  font-family: Nexa;
+  src: url(https://raw.githubusercontent.com/tateyeung/grc339/master/assets/NexaDemo-Bold.woff);
+}
+
+
+/* global */
+:root {
+  /*  colors  */
+  --white: #F5F2F8;
+  --gray: #CAC7CB;
+  --black: #0B1F25;
+  --blue: #103E46;
+  --light-blue: #537386;
+}
+ul {
+/*  reset  */
+  margin: 0;
+}
+body {
+  font-family: Plex;
+  color: var(--black);
+  background-color: var(--white);
+  margin: 0;
+}
+section {
+  max-width: 910px;
+  margin: 0 auto;
+}
+a {
+  color: #103E46;
+}
+h1 {
+  font-family: Nexa;
+  font-size: 2.25em;
+  line-height: 100%;
+}
+h2 {
+  font-family: Nexa;
+  font-size: 1.5em;
+  line-height: 95%;
+  color: var(--blue)
+}
+p {
+  font-family: Plex;
+  font-size: 1.125em;
+  line-height: 133%;
+}
+p.em {
+  font-style: italic;
+}
+p.numerals {
+  font-family: Barlow;
+  font-size: 1.33em;
+  display: inline;
+}
+h3 {
+  font-family: Barlow;
+  font-size: 11em;
+}
+button {
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 6px;
+  font-family: Nexa;
+  font-size: .8em;
+  cursor: pointer;
+  color: var(--blue);
+}
+button.solid {
+  border-width: 0;
+}
+button.solid:hover{
+  background-color: var(--black);
+  color: var(--white);
+  transition: .3s ease;
+}
+button.hollow{
+  background-color: var(--white);
+  border-color: var(--blue);
+  border-width: 2px;
+}
+button.hollow:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  transition: .3s ease;
+}
+.col-2{
+  display: flex;  
+}
+.blue-bg {
+  width: 100%;
+  background-color: var(--blue);
+}
+.gray-bg {
+  width: 100%;
+  background-color: var(--gray);
+}
+
+
+/* header + navigation */
+header {
+  width: 300px;
+  margin: 5em auto 0 auto;
+}
+header img {
+  width: 300px;
+}
+nav {
+  text-align: center;
+  padding-top: 1em;
+}
+nav ul {
+  padding: 0;
+  margin-top: 0.5em;
+}
+nav li {
+  list-style-type: none;
+  display: inline;
+  padding: 0.5em;
+}
+nav a {
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+/* footer */
+footer {
+  max-width: 910px;
+  margin: 0 auto;
+}
+footer nav {
+  width: 100%;
+}
+footer nav li {
+  display: block;
+  text-align: left;
+  text-decoration: underline var(--blue) dotted;
+  transition: .3s ease;
+  padding-left: 10px;
+}
+nav a:hover{
+  text-decoration: underline var(--black);
+}
+.footer-logo {
+  width: 100%;
+  margin-top: 100px;
+}
+.bottom {
+  background-color: var(--gray);
+  position: relative;
+}
+.bottom h2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.hero img {
+  width: 100%;
+  min-height: 250px;
+}
+.hero .container {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* home/featured */
+.featured {
+  text-align: center;
+  color: var(--white);
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.featured h2 {
+  color: var(--white);
+}
+.featured .container h2, p {
+ color: var(--blue);
+}
+.featured .container {
+  background-color: var(--white);
+  padding: 20px;
+}
+.featured .item {
+  width: 100%;
+}
+.featured > .col-2 > div:nth-child(1) {
+  margin-right: 20px;
+}
+.featured > .col-2 > div:nth-child(2) {
+  margin-left: 20px;
+}
+.featured button {
+  margin-top: 50px;
+}
+
+/* menu */
+.menu {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.menu h1 {
+  text-align: center;
+}
+.menu .featured {
+  background-color: var(--blue);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.menu .featured h2, .menu .featured p {
+  color: var(--white);
+}
+.menu h2, .menu p.numerals {
+  display: inline;
+}
+.menu p.numerals {
+  margin-left: .3em;
+}
+.menu h2, .menu p {
+  margin: .2em 0;
+}
+.menu .item {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+.menu .item p {
+  color: var(--light-blue);
+}
+
+/* visit */
+.visit {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.visit button {
+  margin: 10px 0 30px 0;
+}
+.location {
+  width: 100%;
+}
+#map, #map2 {
+  height: 300px;
+}
+.visit h2 {
+  margin-top: 30px;
+}
+.visit > .col-2 > div:nth-child(1) {
+  margin-right: 20px;
+}
+.visit > .col-2 > div:nth-child(2) {
+  margin-left: 20px;
+}
+
+/* philosophy */
+.philosophy {
+  margin-top: 100px;
+}
+.philosophy h1, .philosophy p.em {
+  text-align: center;
+}
+.philosophy p.em {
+  margin-top: 50px;
+}
+.col {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.philosophy .item {
+  width: calc(25% - 15px);
+  position: relative;
+}
+.philosophy .item img {
+  width: 100%;
+}
+.philosophy h2 {
+  position: absolute;
+  margin: 0;
+  bottom: 20px;
+  left: 15px;
+  width: 100%;
+}
+.history .col-2 {
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.history .col-2:nth-child(2){
+  margin-bottom: 100px;
+}
+.history .column{
+  width: calc(50% - 15px);
+  display: flex;
+  align-items: center;
+}
+.history .column img {
+  width: 100%;
+}
+
+@media (max-width: 910px) {
+/*  section max-width is 910; side margin for when max-width >= view  */
+  section, footer {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  nav li {
+    display: block
+  }
+  .col-2 {
+    display: block;
+  }
+  .featured > .col-2 > div:nth-child(1), .visit > .col-2 > div:nth-child(1) {
+    margin-right: 0;
+  }
+  .featured > .col-2 > div:nth-child(2), .visit > .col-2 > div:nth-child(2) {
+    margin-left: 0;
+  }
+  .hero img {
+    object-fit: cover;
+  }
+  .philosophy .item {
+    width: calc(50% - 15px);
+  } 
+  .philosophy .item:nth-child(3), .philosophy .item:nth-child(4) {
+    margin-top:15px;
+  }
+  .history .column {
+    width: 100%;
+  }
+  .history .col-2:nth-child(2){
+    margin-top: 0;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet"> 
+  
+  <!--  google maps  -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7462UQRMRw3hGfURIVA-q7XDNocqCIBU&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="./visit.js"></script>
+</head>
+<body>
+<!--   logo header -->
+  <header>
+    <a href="index.html"><img src="https://raw.githubusercontent.com/tateyeung/grc339/master/assets/logo.svg" alt="Halcyon logo" class="logo"></a>
+  </header>
+<!--  site navigation  -->
+  <nav><ul>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="visit.html">Visit</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+   </ul></nav>
+
+  <main>
+  <section class="visit">
+    <h1>visit</h1>
+
+    <div class="col-2">
+      <div class="location">
+        <div id="map"></div>
+        <h2>sf bay</h2>
+        <p>1740 Berryessa Road<br>San Jose CA</p>
+        <button class="hollow" onclick="document.location='https://maps.google.com'">get directions</button>
+        <p>Open daily<br>10a – 8p</p>
+      </div>
+      <di v class="location">
+        <div id="map2"></div>
+        <h2>la metro</h2>
+        <p>150 Garfield Ave<br>Alhambra CA</p>
+        <button class="hollow" onclick="document.location='https://maps.google.com'">get directions</button>
+        <p>Open daily<br>11a – 11p</p>
+      </di>
+    </div>
+
+  </section>
+  </main>
+  
+  
+<!--  footer  -->
+  <div class="gray-bg">
+  <footer>  
+    <div class="col-2"> 
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="philosophy.html">Philosophy</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="https://www.instagram.com">Stay updated on Instagram</a></li>
+          <li><a href="https://www.yelp.com">Read reviews on Yelp</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  </div>
+  
+  <div class="bottom">
+    <img src="https://raw.githubusercontent.com/tateyeung/grc339/master/assets/logo-footer.svg" alt="Halcyon logo" class="footer-logo">
+    <h2>bubble tea should be simple</h2> 
+  </div>
+</body>
+</html>
